@@ -11,7 +11,7 @@ const MyProfile = () => {
     useEffect(() => {
         const fetchProfileInfo = async () => {
             try {
-                const response = await Axios.post("http://localhost:5000/myprofile/info", { emailid: getSession("sid") });
+                const response = await Axios.post("https://server-alpha-henna.vercel.app/myprofile/info", { emailid: getSession("sid") });
                 setProfileData(response.data[0]);
                 setLoading(false);
             } catch (error) {
