@@ -32,7 +32,7 @@ class ChangePassword extends React.Component {
             return;
         }
 
-        const url = "http://localhost:5000/cp/updatepwd";
+        const url = "hhttps://server-alpha-henna.vercel.app/updatepwd";
         const data = JSON.stringify({
             emailid: this.sid,
             pwd: newPassword
