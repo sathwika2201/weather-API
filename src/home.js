@@ -32,7 +32,7 @@ export function loadMenu(res) {
 }
 
 export function showSMenu(mid) {
-  var surl = "http://localhost:5000/home/menus";
+  var surl = "https://server-alpha-henna.vercel.app/home/menus";
   var ipdata = JSON.stringify({
     mid: mid
   });
@@ -92,13 +92,13 @@ class Home extends React.Component {
     if (this.sid === "")
       window.location.replace("/");
 
-    var url = "http://localhost:5000/home/uname";
+    var url = "https://server-alpha-henna.vercel.app/home/uname";
     var data = JSON.stringify({
       emailid: this.sid
     });
     callApi("POST", url, data, this.loadUname, errorResponse);
 
-    url = "http://localhost:5000/home/menu";
+    url = "https://server-alpha-henna.vercel.app/home/menu";
     callApi("POST", url, "", loadMenu, errorResponse);
   }
   
