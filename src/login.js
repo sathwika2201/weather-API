@@ -93,7 +93,7 @@ function Login(){
             return;
         }
 
-        var url = "http://localhost:5000/registration/signup";
+        var url = "https://server-alpha-henna.vercel.app/registration/signup";
         var data = JSON.stringify({
             firstname : RT1.value,
             lastname : RT2.value,
