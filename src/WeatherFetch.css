@@ -1,0 +1,88 @@
+.weather {
+  background-image: url('./images/mountain.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 100vh;
+}
+
+.weatherinput {
+  position: relative;
+  top: 30%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 40px;
+  width: 30%;
+  border-radius: 12px;
+  justify-content: space-between;
+  background-color: rgba(210, 204, 210, 0.5);
+}
+
+.weatherinput label {
+  color: white;
+  font-weight: bold;
+  font-size: 1.5rem;
+}
+
+input[type="text"] {
+  width: 100%;
+  padding: 10px;
+  font-size: 16px;
+  border: none;
+  border-radius: 4px;
+  margin-bottom: 20px;
+}
+
+.weatherbutton {
+  background-color: blue;
+  color: white;
+  padding: 10px 20px;
+  font-size: 16px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.showdata {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-top: 30px;
+}
+
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  padding: 20px;
+  background-color: rgba(210, 204, 210, 0.5);
+  border-radius: 12px;
+  transition: 0.3s;
+  width: calc(25% - 20px); /* Adjust the card width and margin as needed */
+  margin-bottom: 20px;
+}
+
+.container {
+  display: flex;
+  align-items: center;
+}
+
+.temp img,
+.humid img,
+.wind img,
+.pressure img {
+  width: 50px; /* Adjust the icon size as needed */
+  margin-right: 10px;
+}
+
+.temp h4,
+.humid h4,
+.wind h4,
+.pressure h4 {
+  font-size: 1.5rem;
+}
+
+.temp h2,
+.humid h2,
+.wind h2,
+.pressure h2 {
+  font-size: 2rem;
+  margin-top: 10px;
+}
